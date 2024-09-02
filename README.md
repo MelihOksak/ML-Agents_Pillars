@@ -9,18 +9,21 @@ The Unity ML-Agents package is a toolkit to facilitate the training of artificia
 This simulation was developed for the purpose of practicing with the Unity ML-Agents package and the Reinforcement Learning paradigm. The game environment consists of a single cube (the agent), three pillars (platforms), surrounding walls, and a goal object. The objective is to train the agent to reach the goal by climbing to the top.
 
 ![Game environment](images/1.png)
+*fig1:Game environment*
 
 ## Rewards and Penalties
 
 To encourage exploration while preventing completely random actions, rewards and penalties needed to be defined carefully. In the earlier iterations of the environment, a single reward was defined (+1.0), which was earned by reaching on top of the third pillar. A penalty of -1.0 point was deducted for collisions with the walls.
 
 ![Environment with walls](images/2.png)
+*fig2*
 
 ## Action and Observation Space
 
 The agent’s observation space consists of six floating-point numbers representing the x, y, and z coordinates of the agent and the goal. The action space includes two continuous dimensions for movement along the x and z axes, with values ranging from [-1,1], and one discrete action with a size of 2, representing "jump" or "don't jump" actions.
 
 ![State and Action Space](images/3.png)
+*fig3:*
 
 ## Training
 
